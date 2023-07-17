@@ -1,7 +1,9 @@
+import FormSection from "@/components/DineMarket/FormSection";
 import HeroSection from "../components/DineMarket/HeroSection";
 import Nav from "../components/DineMarket/Nav";
 import ProductSection from "../components/DineMarket/ProductSection";
 import PromotionSection from "../components/DineMarket/PromotionSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function page() {
   return (
@@ -9,7 +11,10 @@ export default function page() {
     <Nav/>
     <HeroSection/>
     <PromotionSection/>
-    <ProductSection/>
+    <FormSection/>
+    <FooterSection/>
+
+    
     </>
   )
 }
