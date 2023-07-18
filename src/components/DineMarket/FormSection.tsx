@@ -2,7 +2,7 @@
 export default function FormSection() {
   return (
     <>
-    <section className="font-poppin my-40 flex flex-col items-center justify-center text-center relative">
+    <section className="font-poppin my-52 flex flex-col items-center justify-center text-center relative">
     <h1 className="text-9xl font-bold text-[#f2f3f7]">Newsletter</h1>
     <div className="space-y-5 absolute">
     <h1 className="text-3xl font-bold tracking-wider">Subscribe Our Newsletter</h1>
