@@ -11,25 +11,25 @@ export default function Nav() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <nav className="lg:px-28 md:px-16 px-10 py-10 font-poppin">
+      <nav className="lg:px-28 md:px-16 px-6 py-10 font-poppin">
         <div className="flex justify-between items-center">
           <div>
-            <Image src={"/logo.png"} alt="dine" width={150} height={150} />
+            <Link href={"/"}><Image src={"/logo.png"} alt="dine" width={150} height={150} /></Link>
           </div>
 
           <div className="md:flex hidden">
             <ul className="flex gap-x-10">
               <li className="hover:scale-110 transition-all">
-                <Link href={"/FemaleSection"}>Female</Link>
+                <Link href={"/category/female"}>Female</Link>
               </li>
               <li className="hover:scale-110 transition-all">
-                <Link href={"/MaleSection"}>Male</Link>
+                <Link href={"/category/male"}>Male</Link>
               </li>
               <li className="hover:scale-110 transition-all">
-                <Link href={"/KidSection"}>Kids</Link>
+                <Link href={"/category/kids"}>Kids</Link>
               </li>
               <li className="hover:scale-110 transition-all">
-                <Link href={"/ProductSection"}>All Products</Link>
+                <Link href={"/Products"}>All Products</Link>
               </li>
             </ul>
           </div>
@@ -91,16 +91,16 @@ export default function Nav() {
                   <div>
                     <ul className="flex flex-col py-1">
                       <li className="py-1 hover:scale-110 transition-all">
-                        <Link href={"/FemaleSection"}>Female</Link>
+                        <Link href={"/category/female"}>Female</Link>
                       </li>
                       <li className="py-1 hover:scale-110 transition-all">
-                        <Link href={"/MaleSection"}>Male</Link>
+                        <Link href={"/category/male"}>Male</Link>
                       </li>
                       <li className="py-1 hover:scale-110 transition-all">
-                        <Link href={"/KidSection"}>Kids</Link>
+                        <Link href={"/category/kids"}>Kids</Link>
                       </li>
                       <li className="py-1 hover:scale-110 transition-all">
-                        <Link href={"/ProductSection"}>All Products</Link>
+                        <Link href={"/Products"}>All Products</Link>
                       </li>
                     </ul>
                   </div>

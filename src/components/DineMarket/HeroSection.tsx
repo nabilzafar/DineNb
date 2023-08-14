@@ -4,13 +4,13 @@ import {AiOutlineShoppingCart} from "react-icons/ai";
 export default function HeroSection() {
   return (
     <>
-    <section className="lg:px-28 md:px-16 px-6 font-poppin flex items-center space-x-28 md:mt-10 mt-5 md:text-base text-sm">
+    <section className="lg:px-28 md:px-16 px-6 font-poppin flex items-center gap-x-28 md:mt-10 mt-5 md:text-base text-sm mx-auto">
 
-        <div className="left flex flex-col shrink-0">
+        <div className="left flex flex-col">
             <p className="bg-blue-100 w-28 py-2 rounded-md text-center text-[#0000FF] font-bold">Sale 70%</p>
-            <h1 className="lg:text-6xl md:text-5xl text-4xl font-bold mt-10">An Industrial Take <br /> on Streetwear</h1>
-            <p className="text-gray-600 mt-10">Anyone can beat you but no one can beat your <br /> outfit as long as you wear Dine outfits.</p>
-            <Link href={"/ProductSection"}>
+            <h1 className=" md:text-6xl text-5xl font-bold mt-10">An Industrial Take  on Streetwear</h1>
+            <p className="text-gray-600 mt-10">Anyone can beat you but no one can beat your  outfit as long as you wear Dine outfits.</p>
+            <Link href={"/Products"}>
             <div className="flex text-white bg-black md:w-52 w-40 justify-center md:py-5 py-3 gap-x-2 mt-10 
             border-2 border-t-slate-400 border-l-slate-400 border-b-black border-r-black">
                 <AiOutlineShoppingCart size={25}/>

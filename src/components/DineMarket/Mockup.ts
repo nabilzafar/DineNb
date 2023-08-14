@@ -6,25 +6,30 @@ interface IT {
     size: number;
     name: string;
     price: string;
+    category: string;
+    subtitle: string
 }
 
-export const people:IT[] = [
+export const items_array:IT[] = [
     {
         id:0,
         source: "/pic5.png",
         alternative: "pic5",
         size: 380,
         name: "Brushed Raglan Sweatshirt",
-        price: '$195.00'
+        price: '$195.00',
+        category: "female",
+        subtitle: "Sweater"
     },
-   
     {
         id:1,
         source: "/main.png",
         alternative: "pic3",
         size: 380,
-        name: "Raglan Sweatshirt",
-        price: '$195.00'
+        name: "Cameryn Sash Tie Dress",
+        price: '$545.00',
+        category: "female",
+        subtitle: "Dress"
     },
     {
         id:2,
@@ -32,7 +37,9 @@ export const people:IT[] = [
         alternative: "pic6",
         size: 380,
         name: "Flex Sweatshirt",
-        price: '$175.00'
+        price: '$175.00',
+        category: "female",
+        subtitle: "Sweater"
     },
     {
         id:3,
@@ -40,7 +47,9 @@ export const people:IT[] = [
         alternative: "pic4",
         size: 380,
         name: "Lite Sweatpants",
-        price: '$150.00'
+        price: '$150.00',
+        category: "kids",
+        subtitle: "Pants"
     },
     {
         id:4,
@@ -48,7 +57,9 @@ export const people:IT[] = [
         alternative: "pic1",
         size: 380,
         name: "Flex Push Button Bomber",
-        price: '$225.00'
+        price: '$225.00',
+        category: "male",
+        subtitle: "Jackets"
         
     },
     {
@@ -57,7 +68,9 @@ export const people:IT[] = [
         alternative: "pic2",
         size: 380,
         name: "Brushed Bomber",
-        price: '$225.00'
+        price: '$225.00',
+        category: "female",
+        subtitle: "Jackets"
     },
     {
         id:6,
@@ -65,7 +78,9 @@ export const people:IT[] = [
         alternative: "pic7",
         size: 380,
         name: "Imperial Alpaca Hoodie",
-        price: '$525.00'
+        price: '$525.00',
+        category: "female",
+        subtitle: "Jackets"
     },
     {
         id:7,
@@ -73,7 +88,9 @@ export const people:IT[] = [
         alternative: "pic8",
         size: 380,
         name: "Pink Fleece Sweatpants",
-        price: '$195.00'
+        price: '$195.00',
+        category: "female",
+        subtitle: "Pants"
     },
     {
         id:8,
@@ -81,7 +98,9 @@ export const people:IT[] = [
         alternative: "pic9",
         size: 380,
         name: "Muscle Tank",
-        price: '$75.00'
+        price: '$75.00',
+        category: "female",
+        subtitle: "T shirts"
     },
     {
         id:9,
@@ -89,7 +108,9 @@ export const people:IT[] = [
         alternative: "pic10",
         size: 380,
         name: "Flex Sweatpants",
-        price: '$175.00'
+        price: '$175.00',
+        category: "kids",
+        subtitle: "Pants",
     },
     {
         id:10,
@@ -97,7 +118,11 @@ export const people:IT[] = [
         alternative: "pic3",
         size: 380,
         name: "Raglan Sweatshirt",
-        price: '$195.00'
+        price: '$195.00',
+        category: "male",
+        subtitle: "Sweater"
     },
 ]
+
+
 
