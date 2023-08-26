@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { items_array } from "./Mockup";
+import Image from 'next/image';
 
 
 export default function ProductsSection() {
@@ -23,7 +24,7 @@ export default function ProductsSection() {
           }}>
             {nabeel.map( (items) => <SwiperSlide key={items.id}>
             <div className="flex flex-col justify-center items-center hover:scale-110 duration-500 md:text-left text-center mt-16">
-              <img src={items.source} alt={items.alternative} width={items.size} height={items.size} />
+              <Image src={items.source} alt={items.alternative} width={items.size} height={items.size} />
               <h1 className="font-bold text-lg mt-3">{items.name}</h1>
               <p className="font-bold text-lg mb-3">{items.price}</p>
             </div>

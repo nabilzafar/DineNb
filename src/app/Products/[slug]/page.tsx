@@ -82,7 +82,6 @@ export default async function page({ params }: { params: { slug: string } }) {
               </div>
             </div>
           </div>
-          
         </div>
       ))}
     </section>
