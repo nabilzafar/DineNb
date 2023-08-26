@@ -39,8 +39,8 @@ export default async function page({ params }: { params: { slug: string } }) {
               <h2 className="text-xl text-gray-400">{item.subtitle}</h2>
               <p className="font-bold pt-10">SELECT SIZE</p>
               <div className="flex gap-x-3">
-                {sizes.map((item) => (
-                  <div className="w-9 h-9 duration-300 rounded-full hover:shadow-xl border mt-2 flex items-center justify-center">
+                {sizes.map((item,index) => (
+                  <div key={index} className="w-9 h-9 duration-300 rounded-full hover:shadow-xl border mt-2 flex items-center justify-center">
                     <span className="text-gray-500 font-bold">{item}</span>
                   </div>
                 ))}
@@ -75,8 +75,8 @@ export default async function page({ params }: { params: { slug: string } }) {
                   PRODUCT <br /> CARE
                 </h1>
                 <ul className="font-bold tracking-widest list-disc lg:ml-60 md:ml-[130px] ml-4">
-                  {item.productcare.map((care) => (
-                    <li>{care}</li>
+                  {item.productcare.map((care,index) => (
+                    <li key={index}>{care}</li>
                   ))}
                 </ul>
               </div>
