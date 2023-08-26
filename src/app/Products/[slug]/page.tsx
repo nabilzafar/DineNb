@@ -17,6 +17,7 @@ export default async function page({ params }: { params: { slug: string } }) {
     <section className="bg-gray-50 lg:px-32 md:px-20 px-8 pt-16 pb-1 mb-16 font-poppin">
       {data.map((item) => (
         <>
+        <div key={item._id}>
           <div className="flex lg:flex-row flex-col gap-x-10">
             <div className="left flex md:flex-row flex-col-reverse gap-y-5 gap-x-8 items-start justify-center">
               <Image
@@ -81,6 +82,7 @@ export default async function page({ params }: { params: { slug: string } }) {
                 </ul>
               </div>
             </div>
+          </div>
           </div>
         </>
       ))}

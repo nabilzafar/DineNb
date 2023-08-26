@@ -14,7 +14,8 @@ export default async function page() {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-10 mb-32 
     lg:px-28 md:px-20 px-8 justify-items-center gap-y-10 gap-x-10">
-    {data.map( (item) => 
+    {data.map( (item) => (
+    <div key={item._id}> 
   <Link href={`Products/${item.slug.current}`}> 
   <div className="hover:scale-110 duration-300">
   <Image key={item._id} src={urlForImage(item.images[0]).url()} alt={"products"} width={300} height={300} 
@@ -24,7 +25,8 @@ export default async function page() {
   <p className="font-bold text-lg mt-2">{item.currency} {item.price}</p>
   </div>
   </Link>
-  )}
+  </div>
+  ))}
    </div>
   )
 }
