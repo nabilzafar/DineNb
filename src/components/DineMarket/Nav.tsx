@@ -6,9 +6,11 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
 import { BsDoorClosed } from "react-icons/bs";
 import { useState } from "react";
+import { useAppSelector } from "@/redux/store";
 
 export default function Nav() {
   const [toggle, setToggle] = useState(false);
+  const totalItems = useAppSelector((state) => state.cart.totalQuantity)
   return (
     <>
       <nav className="lg:px-28 md:px-16 px-6 py-10 font-poppin">
@@ -46,7 +48,7 @@ export default function Nav() {
           <Link href={"/CartSection"}>
             <div className="md:flex bg-gray-200  hidden rounded-full p-3 relative hover:scale-110 transition-all">
               <span className="bg-red-600 text-white rounded-full px-1 absolute -top-2 right-0">
-                0
+                {totalItems ? totalItems : 0}
               </span>
               <AiOutlineShoppingCart size={22} />
             </div>
@@ -75,7 +77,7 @@ export default function Nav() {
                   <div className="bg-gray-200 rounded-full p-3 relative hover:scale-110 transition-all">
                     <Link href={"/CartSection"}>
                       <span className="bg-red-600 text-white rounded-full px-1 absolute -top-2 right-0">
-                        0
+                      {totalItems ? totalItems : 0}
                       </span>
                       <AiOutlineShoppingCart size={22} />
                     </Link>
