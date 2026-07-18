@@ -16,7 +16,7 @@ export default async function page({ params }: { params: { slug: string } }){
     {data.length > 0 ? (
     <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-10 mb-32 
     lg:px-28 md:px-20 px-8 justify-items-center gap-y-10 gap-x-10">
-    {data.map( (item) => 
+    {data.map((item) => (
     <div key={item._id}>
   <Link href={`/Products/${item.slug.current}`}> 
   <div className="hover:scale-110 duration-300">
@@ -28,7 +28,7 @@ export default async function page({ params }: { params: { slug: string } }){
   </div>
   </Link>
   </div>
-  )}
+  ))}
    </div> ) : ( <h1 className="text-5xl font-bold text-center my-40">No Available Products for {params.slug}</h1>)} 
    </div>
   )
