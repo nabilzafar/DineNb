@@ -45,7 +45,7 @@ export default async function page({ params }: { params: { slug: string } }) {
                   </div>
                 ))}
               </div>
-              <AddtoCart product={data} quantity={1} />
+              <AddtoCart product={item} quantity={1} />
             </div>
           </div>
           <div className="bg-[#fff] my-16">
